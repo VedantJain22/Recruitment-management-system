@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ student.user.username }}</h1>
+    <h2>Upcoming Placement Drives</h2>
+    <!-- Add code to list upcoming placement drives -->
+    <a href="{% url 'profile' %}">View Profile</a>
+    <a href="{% url 'student_login' %}">Logout</a>
+</body>
+</html>

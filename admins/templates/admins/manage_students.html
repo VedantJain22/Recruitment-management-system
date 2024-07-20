@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Students</title>
+</head>
+<body>
+    <h1>Manage Students</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Enrollment</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.user.username }}</td>
+            <td>{{ student.enrollment }}</td>
+            <td>{{ student.user.email }}</td>
+            <td>
+                <!-- Add actions for updating and deleting students -->
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'admin_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

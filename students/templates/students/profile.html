@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>{{ student.user.username }}'s Profile</h1>
+    <p>Name: {{ student.user.first_name }} {{ student.user.last_name }}</p>
+    <p>Enrollment: {{ student.enrollment }}</p>
+    <p>Contact: {{ student.contact }}</p>
+    <p>Email: {{ student.user.email }}</p>
+    <p>Gender: {{ student.gender }}</p>
+    <p>City: {{ student.city }}</p>
+    <p>State: {{ student.state }}</p>
+    <p>10th Grade: {{ student.tenth }}</p>
+    <p>12th Grade: {{ student.twelfth }}</p>
+    <p>Placement History: {{ student.placement_history }}</p>
+    <a href="{% url 'student_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

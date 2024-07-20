@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Placement Drives</title>
+</head>
+<body>
+    <h1>Manage Placement Drives</h1>
+    <table>
+        <tr>
+            <th>Company Name</th>
+            <th>Job Role</th>
+            <th>Eligibility Criteria</th>
+            <th>Dates</th>
+            <th>Actions</th>
+        </tr>
+        {% for drive in drives %}
+        <tr>
+            <td>{{ drive.company_name }}</td>
+            <td>{{ drive.job_role }}</td>
+            <td>{{ drive.eligibility_criteria }}</td>
+            <td>{{ drive.dates }}</td>
+            <td>
+                <!-- Add actions for updating and deleting drives -->
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'admin_dashboard' %}">Back to Dashboard</a>
+</body>
+</html>
